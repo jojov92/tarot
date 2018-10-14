@@ -1,4 +1,5 @@
 
+
 .picked-card {
 max-width: 300px;
 position: relative;
@@ -14,11 +15,20 @@ left: 0;
 width: 100%;
 backface-visibility: hidden;
 height: 510px;
+
 }
 
 .pattern {
-background-color: pink;
-
+/*background-color: pink;*/
+background: 
+linear-gradient(30deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(150deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(30deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(150deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(60deg, #dbdbdb 25%, transparent 25.5%, transparent 75%, #dbdbdb 75%, #dbdbdb 0), 
+linear-gradient(60deg, #dbdbdb 25%, transparent 25.5%, transparent 75%, #dbdbdb 75%, #dbdbdb 0), #ccc;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+background-size: 80px 140px;
 }
 
 .face {
@@ -32,14 +42,59 @@ transform: rotateY(180deg)
 }
 
 .card-description {
-    position:absolute;
-    top:90%;
-    left:5%;
-    text-align: left;
-    padding-top: 10px;
+    position:relative;
+    
+    text-align: center;
+    padding-top: 15px;
 }
 
 .hide {
 display:none;
 
 }
+
+.center {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+  
+}
+
+/* Smartphones (portrait) ----------- */
+@media (min-width : 630px) {
+    .picked-card {
+        width: 100%;
+    }
+
+    .card-description {
+        position:relative;
+      
+        text-align: center;
+        padding-top: 15px;
+
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    /* Styles */
+    .picked-card {
+        width: 100%;
+    }
+
+    .card-description {
+        position:absolute;
+        
+        text-align: center;
+        padding-top: 15px;
+       
+    }
+    }
+
+    body {
+        
+        background-color: #000000;
+        background-image: linear-gradient(black, gray);
+        background-repeat:repeat;
+        }
+    
