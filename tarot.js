@@ -23,7 +23,7 @@ console.log(index);*/
 
 function pickRandomCard1() {
     const index = Math.random();
-    const max = 3;
+    const max = 4;
     const min = 0;
     const cardNumber = Math.floor (index * (max - min ) + min);
 return cardNumber;
